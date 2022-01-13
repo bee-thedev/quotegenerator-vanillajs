@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
+ 
+/* :root{
+   /* ----- Fonts ----- */
+   /* --font-main: 'Caveat', cursive;
+  */
+   /* ------ Color Scheme ---- */
+ 
+   /* --color-main: gray;
+} */ 
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Caveat', cursive;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #fbe3cb;
+  }
+/* ----- Main Container ------ */
+
+  .quoteContainer{
+      width: 540px;
+      background-color: ghostwhite;
+      border-radius: 15px;
+      padding: 25px 50px 75px;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.1);;
+  }
+
+  /* ------- Header and p and span tag ----*/
+header, .quoteContent :where(p, span){
+    color: dodgerblue;
+}
+
+/* ------ Header's Weight ----- */
+
+.quoteContainer header{
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+/*------ Content inside the Container -----*/
+
+.quote-container .quote-content{
+    margin: 35px 0;
+}
+
+/*------- Quote Content Containing the Quote text -----*/
+
+.quoteContent .quoteText{
+    display: flex;
+    justify-content: space-between;
+}
+
+.quoteText i{
+    font-size: 15px;
+}
+
+.quoteText i:first-child{
+    margin: 3px 10px 0px 0px;
+    
+}
+
+.quoteText i:last-child{
+    margin: 0 0 3px 10px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.quoteText .quote{
+    font-size: 18px;
+    text-align: center;
+    word-break: break-all;
+}
+
+.quoteContent .quoteAuthor{
+    display: flex;
+    font-size: 18px;
+    justify-content: flex-end;
+    margin-top: 24px;
+}
+
+.quoteAuthor span:first-child{
+    margin: 7px 5px 0 0;
+    font-family: monospace;
+}
+
+/* ------ Button Division -----*/
+
+.quoteContainer .quoteButton{
+    border-top: 1px solid #fbe3cb;
+}
+
+.quoteButton .quoteFeatures{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.quoteFeatures ul{
+    display: flex;
+}
+
+.quoteFeatures ul li{
+    list-style: none;
+    margin: 0 5px;
+    height: 47px;
+    width: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    color: hsl(205, 78%, 60%);
+    border: 2px solid  #fbe3cb;
+    transition: all 0.3s ease;
+}
+
+.quoteFeatures ul li:first-child{
+    margin-left: 0%;
+}
+
+ul li:is(:hover, .active){
+    background:  #fbe3cb;
+}
+
+ul .quote-speech.active{
+    pointer-events: none;
+}
+
+/* .quote-button button{
+        border: none;
+        color: #fff;
+        outline: none;
+        font-size: 16px;
+        cursor: pointer;
+        padding: 13px 22px;
+        border-radius: 30px;
+        background:hsl(205, 78%, 60%);
+      }
+      .quote-button button.loading{
+        opacity: 0.7;
+        pointer-events: none;
+      }
+ */
+
+    
+
+/* CSS */
+.quoteButton button{
+  background-color: #fbe3cb;
+  border: 0 solid #E5E7EB;
+  box-sizing: border-box;
+  color: #000000;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 400;
+  justify-content: center;
+  line-height: 1.5rem;
+  padding: .5rem 0.65rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none black solid;
+  text-decoration-thickness: auto;
+  width: 100%;
+  max-width: 100px;
+  position: relative;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.quoteButton button:focus {
+  outline: 0;
+}
+
+.quoteButton button:after {
+  content: '';
+  position: absolute;
+  border: 1px solid hsl(205, 78%, 60%);
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.quoteButton button:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+@media (min-width: 640px) {
+    .quoteButton button {
+    padding: .5rem 2rem;
+    font-size: .75rem;
+  }
+}
