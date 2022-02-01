@@ -199,9 +199,30 @@ ul .quote-speech.active{
   left: 2px;
 }
 
-@media (min-width: 640px) {
+@media (max-width: 640px) {
     .quoteButton button {
     padding: .5rem 2rem;
     font-size: .75rem;
   }
+  .quoteContainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: ghostwhite;
+
+}
+
+.quoteButton .quoteFeatures{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.quoteButton  button{
+        margin-left: 80px;
+}
 }
