@@ -34,7 +34,7 @@ body{
   }
 
   /* ------- Header and p and span tag ----*/
-header, .quoteContent :where(p, span){
+header, .quoteContent :where(p){
     color: dodgerblue;
 }
 
