@@ -9,7 +9,6 @@ const apiurl = "https://goquotes-api.herokuapp.com/api/v1/random?count=200";
 
 // const apiurl ="http://api.quotable.io/random";
 
-console.log(apiurl)
 synth = speechSynthesis;
 
 function fetchQuote(){
