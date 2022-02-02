@@ -44,6 +44,7 @@ header, .quoteContent :where(p, span){
     font-size: 2rem;
     font-weight: 900;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 /*------ Content inside the Container -----*/
@@ -77,7 +78,7 @@ header, .quoteContent :where(p, span){
 .quoteText .quote{
     font-size: 18px;
     text-align: center;
-    word-break: break-all;
+    word-wrap: break-word;
 }
 
 .quoteContent .quoteAuthor{
@@ -128,7 +129,7 @@ header, .quoteContent :where(p, span){
     margin-left: 0%;
 }
 
-ul li:is(:hover, .active){
+ul li:is(:hover, .active, :focus){
     background:  #fbe3cb;
 }
 
