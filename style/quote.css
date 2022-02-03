@@ -200,6 +200,8 @@ ul .quote-speech.active{
   left: 2px;
 }
 
+/* -------------------------- Responsiveness --------------------------- */
+
 @media (max-width: 640px) {
     .quoteButton button {
     padding: .5rem 2rem;
@@ -225,5 +227,11 @@ ul .quote-speech.active{
 
 .quoteButton  button{
         margin-left: 80px;
+}
+}
+
+@media (max-width: 450px) {
+    .quoteButton  button{
+        margin-left: 30px;
 }
 }
